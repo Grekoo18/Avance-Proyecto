@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Servicios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- DESCRIPCIÓN -->
+  <section class="intro">
+    <h2>Nuestros Servicios Tecnológicos</h2>
+    <p>
+      Ofrecemos soluciones digitales adaptadas a tus necesidades
+    </p>
+  </section>
+
+  <!-- LISTA DE SERVICIOS -->
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="12" size-md="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-icon name="globe-outline"></ion-icon>
+            <ion-card-title>Desarrollo Web</ion-card-title>
+            <ion-card-subtitle>Desde $150</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              Páginas web modernas, rápidas y optimizadas para cualquier dispositivo.
+            </p>
+
+            <ion-button expand="block" color="primary" (click)="onContratar('Desarrollo Web')">
+              Contratar
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+            <ion-card-title>Aplicaciones Móviles</ion-card-title>
+            <ion-card-subtitle>Desde $300</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              Apps Android y iOS desarrolladas con Ionic y Angular.
+            </p>
+
+            <ion-button expand="block" color="primary" (click)="onContratar('Aplicaciones Móviles')">
+              Contratar
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-icon name="construct-outline"></ion-icon>
+            <ion-card-title>Soporte Técnico</ion-card-title>
+            <ion-card-subtitle>Desde $50</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              Mantenimiento, reparación y optimización de sistemas.
+            </p>
+
+            <ion-button expand="block" color="primary" (click)="onContratar('Soporte Técnico')">
+              Contratar
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+            <ion-card-title>Seguridad Informática</ion-card-title>
+            <ion-card-subtitle>Desde $120</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              Protección de datos, auditorías y configuración de seguridad.
+            </p>
+
+            <ion-button expand="block" color="primary" (click)="onContratar('Seguridad Informática')">
+              Contratar
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
